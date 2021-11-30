@@ -24,5 +24,10 @@ namespace SejtKemiRegning
         {
             InitializeComponent();
         }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+            OutputField.Text = InputField.Text;
+        }
     }
 }
