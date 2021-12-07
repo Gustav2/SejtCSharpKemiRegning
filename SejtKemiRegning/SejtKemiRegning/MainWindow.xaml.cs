@@ -27,7 +27,9 @@ namespace SejtKemiRegning
 
         private void Test_Click(object sender, RoutedEventArgs e)
         {
-            OutputField.Text = InputField.Text;
+            Calculator calc = new Calculator();
+            string subs = calc.convertToString(calc.Calculate(InputField.Text));
+            OutputField.Text = subs;
         }
     }
 }
