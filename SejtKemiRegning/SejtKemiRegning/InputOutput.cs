@@ -9,7 +9,6 @@ namespace SejtKemiRegning
         public static Dictionary<string, double> CSVToDict(string path)
         {
             Dictionary<string, double> dict = new Dictionary<string, double>();
-
             
             using (StreamReader sr = new StreamReader(path))
             {
