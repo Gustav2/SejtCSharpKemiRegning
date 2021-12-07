@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 
 namespace SejtKemiRegning
@@ -21,7 +22,7 @@ namespace SejtKemiRegning
                         try
                         {
                             //uses index 1 for element and 3 for molmass
-                            dict.Add(values[1], double.Parse(values[3]));
+                            dict.Add(values[1],Double.Parse(values[3], CultureInfo.InvariantCulture));
                         }
                         catch (Exception e)
                         {

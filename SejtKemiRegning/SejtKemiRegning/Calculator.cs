@@ -9,7 +9,7 @@ namespace SejtKemiRegning
     public class Calculator
     {
         public double[] Calculate(string inputText){
-            Dictionary<string, double> molMasses = InputOutput.CSVToDict("dims.csv");
+            Dictionary<string, double> molMasses = InputOutput.CSVToDict(@"dims.csv");
             string[] substances = ParseInput(inputText);
             int[] amounts = new int[substances.Length];
             

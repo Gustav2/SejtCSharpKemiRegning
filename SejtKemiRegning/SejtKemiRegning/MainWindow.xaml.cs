@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,6 +31,16 @@ namespace SejtKemiRegning
             Calculator calc = new Calculator();
             string subs = calc.convertToString(calc.Calculate(InputField.Text));
             OutputField.Text = subs;
+        }
+        
+        private void ParseDict(object sender, RoutedEventArgs e)
+        {
+            var dict = InputOutput.CSVToDict(@"dims.csv");
+            
+            foreach (KeyValuePair<string, double> entry in dict)
+            {
+                OutputField.Text += entry.Key + ": " + entry.Value + "\n";
+            }
         }
     }
 }
