@@ -15,13 +15,13 @@ namespace SejtKemiRegning
             
             for(int i = 0; i < substances.Length; i++){
                 amounts[i] = int.Parse(Regex.Replace(substances[i], "[^0-9.]", ""));
-                substances[i] = Regex.Replace(substances[i], @"[\d]", "");
+                substances[i] = Regex.Replace(substances[i], @"\d", "");
             }
             double[] molMass = new double[substances.Length];
             
-            foreach (var t in substances){
-                if(molMasses.ContainsKey(t)){
-                    molMass.Append(molMasses[t]);
+            for (int i = 0; i < substances.Length; i++){
+                if (molMasses.ContainsKey(substances[i])){
+                    molMass[i] = molMasses[substances[i]] * amounts[i];
                 }
             }
 
