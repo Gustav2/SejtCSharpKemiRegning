@@ -30,8 +30,9 @@ namespace SejtKemiRegning
         
         public string[] ParseInput(string input){
             input = input.Replace(" ", "");
-            string[] inputArray = input.Split("+");
-            return inputArray;
+            input = input.Replace("+", "");
+            string[] split =  Regex.Split(input, @"(?<!^)(?=[A-Z])|(?=[+])");
+            return split;
         }
         
         public string convertToString(double[] inputArray){
