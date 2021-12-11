@@ -42,5 +42,12 @@ namespace SejtKemiRegning
                 OutputField.Text += entry.Key + ": " + entry.Value + "\n";
             }
         }
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+            string[] arr = new []{"He", "H", "N", "O", "H", "O", "N", "H", "O", "N"};
+            double[] arr2 = new double[] { 1, 5, 3, 2, 5, 6, 2, 3, 6, 5 };
+            InputOutput.arrayToExcel(arr, arr2);
+        }
     }
 }
