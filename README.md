@@ -1,1 +1,1 @@
-"# SejtCSharpKemiRegning" 
+# SejtCSharpKemiRegning
