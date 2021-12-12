@@ -8,26 +8,26 @@ using DocumentFormat.OpenXml.Spreadsheet;
 namespace SejtKemiRegning
 {
     public class Calculator {
-        private Dictionary<string, double> molMasses = InputOutput.CSVToDict(@"dims.csv");
-        private string[] _substances;
-        private int[] _amounts;
-        private int[] _coeffecients;
+        private readonly Dictionary<string, double> _molMasses = InputOutput.CSVToDict(@"dims.csv");
+        private readonly string[] _substances;
+        private readonly int[] _amounts;
+        private readonly int[] _coefficients;
 
         public Calculator(string inputText) {
             _substances = ParseInput(inputText);
             _amounts = getAmounts(_substances);
-            _coeffecients = getCoeffecients(_substances);
+            _coefficients = getCoeffecients(_substances);
             _substances = removeCoeffecients(_substances);
         }
         
         public double[] Calculate(){
             double[] molMass = new double[_substances.Length];
             for (int i = 0; i < _substances.Length; i++){
-                if (molMasses.ContainsKey(_substances[i]) && _amounts[i] == 0){
-                    molMass[i] = molMasses[_substances[i]] * _coeffecients[i];
+                if (_molMasses.ContainsKey(_substances[i]) && _amounts[i] == 0){
+                    molMass[i] = _molMasses[_substances[i]] * _coefficients[i];
                 }
-                else if (molMasses.ContainsKey(_substances[i]) && _amounts[i] != 0){
-                    molMass[i] = molMasses[_substances[i]] * _amounts[i] * _coeffecients[i];
+                else if (_molMasses.ContainsKey(_substances[i]) && _amounts[i] != 0){
+                    molMass[i] = _molMasses[_substances[i]] * _amounts[i] * _coefficients[i];
                 }
                 else
                 {
@@ -53,18 +53,18 @@ namespace SejtKemiRegning
         }
 
         private int[] getCoeffecients(string[] substances) {
-            int[] coeffecients = new int[substances.Length];
+            int[] coefficients = new int[substances.Length];
             for (int i = 0; i < substances.Length; i++) {
                 // Puts all coefficients in match
                 var match = Regex.Match(substances[i], @"\G([^(A-Z)\d]*)\d");
                 if (match.Success) {
-                    coeffecients[i] = int.Parse(match.Value);
+                    coefficients[i] = int.Parse(match.Value);
                 }
                 else {
-                    coeffecients[i] = 1;
+                    coefficients[i] = 1;
                 }
             }
-            return coeffecients;
+            return coefficients;
         }
 
         private string[] removeCoeffecients(string[] substances) {
