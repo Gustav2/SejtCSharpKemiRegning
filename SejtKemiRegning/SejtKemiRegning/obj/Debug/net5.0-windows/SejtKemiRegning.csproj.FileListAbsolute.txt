@@ -68,3 +68,29 @@ C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRe
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\DocumentFormat.OpenXml.dll
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\ExcelNumberFormat.dll
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.csproj.CopyComplete
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\SejtKemiRegning.exe
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\SejtKemiRegning.deps.json
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\SejtKemiRegning.runtimeconfig.json
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\SejtKemiRegning.runtimeconfig.dev.json
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\SejtKemiRegning.dll
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\ref\SejtKemiRegning.dll
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\SejtKemiRegning.pdb
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\ClosedXML.dll
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\bin\Debug\net5.0-windows\ExcelNumberFormat.dll
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.csproj.AssemblyReference.cache
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning_MarkupCompile.cache
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning_MarkupCompile.lref
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.g.resources
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.AssemblyInfoInputs.cache
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.AssemblyInfo.cs
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.csproj.CopyComplete
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.dll
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\ref\SejtKemiRegning.dll
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.pdb
+C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.genruntimeconfig.cache

@@ -30,14 +30,13 @@ namespace SejtKemiRegning
         {
             try
             {
-                Calculator calc = new Calculator();
-                string subs = calc.convertToString(calc.Calculate(InputField.Text));
+                Calculator calc = new Calculator(InputField.Text);
+                string subs = calc.convertToString(calc.Calculate());
                 OutputField.Text = subs;
             }
             catch (Exception exception)
             {
                 OutputField.Text = $"Error when calculating: {exception.Message}";
-                
             }
             
         }
@@ -46,9 +45,9 @@ namespace SejtKemiRegning
         {
             try
             {
-                Calculator calc = new Calculator();
+                Calculator calc = new Calculator(InputField.Text);
                 string[] subs = calc.ParseInput(InputField.Text);
-                double[] molMass = calc.Calculate(InputField.Text);
+                double[] molMass = calc.Calculate();
                 InputOutput.arrayToExcel(subs, molMass);
             }
             catch (Exception exception)
