@@ -7,7 +7,20 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Dani.jpg" />
+      <None Remove="Gustav.jpg" />
+      <None Remove="icon.ico" />
+      <None Remove="jens.png" />
+      <None Remove="Kion.jpg" />
+      <None Remove="unknown.png" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="ClosedXML" Version="0.95.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="icon.ico" />
     </ItemGroup>
 
 </Project>
