@@ -16,21 +16,18 @@ namespace SejtKemiRegning
         public Calculator(string inputText) {
             _substances = ParseInput(inputText);
             _amounts = getAmounts(_substances);
-            _coefficients = getCoeffecients(_substances);
-            _substances = removeCoeffecients(_substances);
         }
         
         public double[] Calculate(){
             double[] molMass = new double[_substances.Length];
             for (int i = 0; i < _substances.Length; i++){
                 if (_molMasses.ContainsKey(_substances[i]) && _amounts[i] == 0){
-                    molMass[i] = _molMasses[_substances[i]] * _coefficients[i];
+                    molMass[i] = _molMasses[_substances[i]];
                 }
                 else if (_molMasses.ContainsKey(_substances[i]) && _amounts[i] != 0){
-                    molMass[i] = _molMasses[_substances[i]] * _amounts[i] * _coefficients[i];
+                    molMass[i] = _molMasses[_substances[i]] * _amounts[i];
                 }
-                else
-                {
+                else {
                     throw new Exception("Unknown Substance");
                 }
             }

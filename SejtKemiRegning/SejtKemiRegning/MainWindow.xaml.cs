@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -21,37 +22,38 @@ namespace SejtKemiRegning
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
+        public MainWindow() {
             InitializeComponent();
         }
 
-        private void Calc_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
+        private void Calc_Click(object sender, RoutedEventArgs e) {
+            try {
                 Calculator calc = new Calculator(InputField.Text);
-                string subs = calc.convertToString(calc.Calculate());
-                OutputField.Text = subs;
+                double[] molMassArray = calc.Calculate();
+                string molMasses = calc.convertToString(molMassArray);
+                if (molMassArray.Length > 1) {
+                    DataTable dt = new DataTable();
+                    var ex = dt.Compute(molMasses.Replace(",", "."), "");
+                    OutputField.Text = $"{molMasses} = {ex}";
+                }
+                else {
+                    OutputField.Text = molMasses;
+                }
             }
-            catch (Exception exception)
-            {
+            catch (Exception exception) {
                 OutputField.Text = $"Error when calculating: {exception.Message}";
             }
             
         }
         
-        private void Export_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
+        private void Export_Click(object sender, RoutedEventArgs e) {
+            try {
                 Calculator calc = new Calculator(InputField.Text);
                 string[] subs = calc.ParseInput(InputField.Text);
                 double[] molMass = calc.Calculate();
                 InputOutput.arrayToExcel(subs, molMass);
             }
-            catch (Exception exception)
-            {
+            catch (Exception exception) {
                 OutputField.Text = $"Error exporting to excel: {exception.Message}";
             }
             
