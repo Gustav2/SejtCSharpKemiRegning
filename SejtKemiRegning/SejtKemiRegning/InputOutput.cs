@@ -50,11 +50,22 @@ namespace SejtKemiRegning
                 for (int i = 0; i < elementArr.Length; i++)
                 {
                     worksheet.Cell($"A{i+1}").Value = elementArr[i];
+                    worksheet.Cell($"A{i+1}").Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
+                    worksheet.Cell($"A{i+1}").Style.Border.OutsideBorderColor = XLColor.Black;
+                    
                     worksheet.Cell($"B{i+1}").Value = molMassArr[i];
+                    worksheet.Cell($"B{i+1}").Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
+                    worksheet.Cell($"B{i+1}").Style.Border.OutsideBorderColor = XLColor.Black;
                     endIndex = i;
                 }
-                worksheet.Cell($"A{endIndex+2}").Value = "Sum";
-                worksheet.Cell($"B{endIndex + 2}").Value = worksheet.Evaluate($"=SUM(B1:B{endIndex + 1})");
+                worksheet.Cell($"A{endIndex+3}").Value = "Sum";
+                worksheet.Cell($"A{endIndex+3}").Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
+                worksheet.Cell($"A{endIndex+3}").Style.Border.OutsideBorderColor = XLColor.Black;
+                
+                worksheet.Cell($"B{endIndex + 3}").Value = worksheet.Evaluate($"=SUM(B1:B{endIndex + 1})");
+                worksheet.Cell($"B{endIndex + 3}").Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
+                worksheet.Cell($"B{endIndex + 3}").Style.Border.OutsideBorderColor = XLColor.Black;
+                
                 workbook.SaveAs("molMass.xlsx");
             }
         }
