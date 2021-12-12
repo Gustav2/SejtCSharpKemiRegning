@@ -28,28 +28,34 @@ namespace SejtKemiRegning
 
         private void Calc_Click(object sender, RoutedEventArgs e)
         {
-            Calculator calc = new Calculator();
-            string subs = calc.convertToString(calc.Calculate(InputField.Text));
-            OutputField.Text = subs;
+            try
+            {
+                Calculator calc = new Calculator();
+                string subs = calc.convertToString(calc.Calculate(InputField.Text));
+                OutputField.Text = subs;
+            }
+            catch (Exception exception)
+            {
+                OutputField.Text = $"Error when calculating: {exception.Message}";
+                
+            }
+            
         }
         
-        private void ParseDict(object sender, RoutedEventArgs e)
-        {
-            var dict = InputOutput.CSVToDict(@"dims.csv");
-            
-            foreach (KeyValuePair<string, double> entry in dict)
-            {
-                OutputField.Text += entry.Key + ": " + entry.Value + "\n";
-            }
-        }
-
         private void Export_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                Calculator calc = new Calculator();
+                string[] subs = calc.ParseInput(InputField.Text);
+                double[] molMass = calc.Calculate(InputField.Text);
+                InputOutput.arrayToExcel(subs, molMass);
+            }
+            catch (Exception exception)
+            {
+                OutputField.Text = $"Error exporting to excel: {exception.Message}";
+            }
             
-            Calculator calc = new Calculator();
-            string[] subs = calc.ParseInput(InputField.Text);
-            double[] molMass = calc.Calculate(InputField.Text);
-            InputOutput.arrayToExcel(subs, molMass);
         }
     }
 }
