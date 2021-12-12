@@ -53,7 +53,6 @@ C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRe
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning_MarkupCompile.cache
-C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning_MarkupCompile.lref
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\MainWindow.baml
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.g.resources
 C:\Users\gusta\Documents\GitHub\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.GeneratedMSBuildEditorConfig.editorconfig

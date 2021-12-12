@@ -39,6 +39,7 @@ namespace SejtKemiRegning
                 string[] subs = calc.ParseInput(InputField.Text);
                 double[] molMass = calc.Calculate();
                 InputOutput.arrayToExcel(subs, molMass);
+                succes.Visibility = Visibility.Visible;
             }
             catch (Exception exception) {
                 OutputField.Text = $"Error exporting to excel: {exception.Message}";
