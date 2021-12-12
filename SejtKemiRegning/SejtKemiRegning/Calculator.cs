@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text.RegularExpressions;
-using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace SejtKemiRegning
 {
     public class Calculator {
-        private readonly Dictionary<string, double> _molMasses = InputOutput.CSVToDict(@"dims.csv");
+        private readonly Dictionary<string, double> _molMasses = InputOutput.CSVToDict(@"molMasses.csv");
         private readonly string[] _substances;
         private readonly int[] _amounts;
         private readonly int[] _coefficients;

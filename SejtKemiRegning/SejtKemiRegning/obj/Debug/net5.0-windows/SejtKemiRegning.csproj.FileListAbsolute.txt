@@ -82,7 +82,6 @@ C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemi
 C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning_MarkupCompile.cache
-C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning_MarkupCompile.lref
 C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\MainWindow.baml
 C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.g.resources
 C:\Users\Daniel Nettelfield\Desktop\programmering\SejtCSharpKemiRegning\SejtKemiRegning\SejtKemiRegning\obj\Debug\net5.0-windows\SejtKemiRegning.GeneratedMSBuildEditorConfig.editorconfig
