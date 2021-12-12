@@ -30,6 +30,10 @@ namespace SejtKemiRegning
         
         public string[] ParseInput(string input){
             input = input.Replace(" ", "");
+            
+            // Replaces every every coefficient with nothing to avoid errors, but pls fix in future
+            input = Regex.Replace(input, @"\G([^(A-Z)\d]*)\d|([+]([^[A-Z]*))", "");
+            
             input = input.Replace("+", "");
             string[] split =  Regex.Split(input, @"(?<!^)(?=[A-Z])|(?=[+])");
             return split;
