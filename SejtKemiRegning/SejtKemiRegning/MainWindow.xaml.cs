@@ -26,7 +26,7 @@ namespace SejtKemiRegning
             InitializeComponent();
         }
 
-        private void Test_Click(object sender, RoutedEventArgs e)
+        private void Calc_Click(object sender, RoutedEventArgs e)
         {
             Calculator calc = new Calculator();
             string subs = calc.convertToString(calc.Calculate(InputField.Text));
