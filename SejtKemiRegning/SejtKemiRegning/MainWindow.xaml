@@ -36,18 +36,7 @@
         </TextBlock>
         <Label Content="Molarmasse beregner" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="800" FontSize="48" Height="80" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Bahnschrift" Foreground="White"/>
         <Label x:Name="succes" Content="Eksporterede til Excel " HorizontalAlignment="Left" Margin="462,363,0,0" VerticalAlignment="Top" Width="176" FontFamily="Bahnschrift" FontSize="16" Foreground="#FF00F121" Visibility="Hidden">
-            <Label.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0" Storyboard.TargetProperty="Visibility">
-                                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Visible}"/>
-                                <DiscreteObjectKeyFrame KeyTime="0:0:10" Value="{x:Static Visibility.Hidden}"/>
-                            </ObjectAnimationUsingKeyFrames>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Label.Triggers>
+            
         </Label>
 
     </Grid>

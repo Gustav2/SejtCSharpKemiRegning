@@ -66,7 +66,7 @@ namespace SejtKemiRegning
                 worksheet.Cell($"B{endIndex + 3}").Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
                 worksheet.Cell($"B{endIndex + 3}").Style.Border.OutsideBorderColor = XLColor.Black;
                 
-                workbook.SaveAs("molMass.xlsx");
+                workbook.SaveAs("../../../../../molMass.xlsx");
             }
         }
     }
